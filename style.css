@@ -3,5 +3,9 @@ h1 {
 }
 
 html {
-  background-color: orange;
+  background-color: grey;
+}
+
+h1 {
+  color: black;
 }

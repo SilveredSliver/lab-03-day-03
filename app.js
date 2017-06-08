@@ -87,6 +87,7 @@ var finalResponse;
         alert('You have to guess between 5 and 15!');
       }
     }
+  console.log('User input to prompt number guessing game was ' + userGuess);
 
   var state = ['montana', 'oregon', 'florida', 'arizona'];
 
@@ -102,3 +103,4 @@ var finalResponse;
       }
     }
         alert('All the correct answers are ' + state.toString());
+  console.log('User input to prompt array question game was ' + guess);

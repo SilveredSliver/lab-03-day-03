@@ -71,7 +71,7 @@ var finalResponse;
 
   var correctNumber = Math.floor(Math.random() * (16 - 0) + 0);
 
-    for (var guessesLeft = 4; guessesLeft > 0 && notDone; guessesLeft--) {
+    for (var guessesLeft = 4; guessesLeft > 0; guessesLeft--) {
     var  userGuess = prompt('What is my favorite number between 5 and 15? You have 4 guesses!');//gets user input
     if (userGuess == correctNumber) {
         alert('You got it right!');

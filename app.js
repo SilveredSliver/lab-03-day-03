@@ -71,20 +71,21 @@ var finalResponse;
 
   var correctNumber = Math.floor(Math.random() * (16 - 0) + 0);
 
-    for (var guessesLeft = 4; guessesLeft > 0; guessesLeft--) {
-    var  userGuess = prompt('What is my favorite number between 5 and 15? You have 4 guesses!');//gets user input
-    if (userGuess == correctNumber) {
-        alert('You got it right!');
-        break;
-    } else if (guessesLeft === 1) {
-        alert('you are out of guesses. The number was ' + correctNumber);
-      } else if (userGuess < 16 && userGuess > 0) {
-        alert('guess again. You have ' + guessesLeft + ' guesses left.');
-      } else {
-        alert('You have to guess between 5 and 15!');
-      }
+  for (var guessesLeft = 4; guessesLeft > 0; guessesLeft--) {
+    var  userGuess = parseInt(prompt('What is my favorite number between 5 and 15? You have 4 guesses!'));//gets user input
+    //parseInt(); will give a whole integer number because prompt(); by itself will always give you a string value even if the user types in a number, resulting in you not being able to use a === (in the below code).
+      console.log('User input to prompt number guessing game was ' + userGuess);
+  if (userGuess === correctNumber) {
+      alert('You got it right!');
+      break;
+  } else if (guessesLeft === 1) {
+      alert('you are out of guesses. The number was ' + correctNumber);
+    } else if (userGuess < 16 && userGuess > 0) {
+      alert('guess again. You have ' + guessesLeft + ' guesses left.');
+    } else {
+      alert('You have to guess between 5 and 15!');
     }
-  console.log('User input to prompt number guessing game was ' + userGuess);
+  }
 
   var state = ['montana', 'oregon', 'florida', 'arizona'];
 

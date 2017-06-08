@@ -90,6 +90,7 @@ var finalResponse;
 
     for (var guessesLeft = 6; guessesLeft > 0; guessesLeft--) {
      var guess = prompt('What is a state have I been to other than Washington state?');
+      console.log('User input to prompt array question game was ' + guess);
     if (state.indexOf(guess.trim().toLowerCase()) >= 0 ) {
         alert('You guessed one of them right!');
         break;

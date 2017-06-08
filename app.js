@@ -77,9 +77,9 @@ var finalResponse;
         alert('You got it right!');
         break;
     } else if (guessesLeft === 1) {
-        alert('you are out of guesses');
+        alert('you are out of guesses. The number was ' + correctNumber);
       } else if (userGuess < 16 && userGuess > 0) {
-        alert('guess again');
+        alert('guess again. You have ' + guessesLeft + ' guesses left.');
       } else {
         alert('You have to guess between 5 and 15!');
       }
@@ -96,7 +96,7 @@ var finalResponse;
     } else if (guessesLeft === 1) {
         alert('you are out of guesses!');
       } else {
-        alert('guess again!');
+        alert('guess again! You have ' + guessesLeft + ' guesses left.');
       }
     }
         alert('All the correct answers are ' + state.toString());
